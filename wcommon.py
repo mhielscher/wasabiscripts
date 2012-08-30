@@ -51,7 +51,7 @@ def openUrlSafe(url):
 				time.sleep(5)
 	return f
 	
-def oauth_req(url, key=USER_KEY, secret=USER_SECRET, http_method="GET", post_body=None, http_headers=None):
+def oauth_req(url, key=USER_KEY, secret=USER_SECRET, http_method="GET", post_body='', http_headers=None):
 	global CONSUMER_KEY
 	global CONSUMER_SECRET
 	consumer = oauth.Consumer(key=CONSUMER_KEY, secret=CONSUMER_SECRET)
